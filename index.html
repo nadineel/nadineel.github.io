@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SWENG Github Visualizer</title>
+    </head>
+    <body >
+        <link rel="stylesheet" href="stylefolder/style.css">
+
+        <h2>
+            <b>
+            <div style="text-align: center">SWENG Github Visualizer</div> 
+            </b>            
+        </h2>
+
+        <h3>
+            <br/>
+            GitHub Username: <input id="user" type="text"/>
+            <button onclick="inputFunction()"> Search </button> 
+        </h3>
+        <br/>
+
+        <div class="blocks"; style="text-align: left">
+            <img class="userInfo" id="img" src=''>               
+            <p id="name"></p>
+            <p id="userName"></p>
+            <p id="bio"></p>
+            <p id="followers"></p>
+            <p id="following"></p>
+            <p id="location"></p>
+            <p id="public_repos"></p>
+            
+            <div id="repoSearchBox"  style="display:none;" >
+                Repositories: <input id="repo" list="datalist" onkeyup="show(this.value)">
+                <datalist id=datalist></datalist>
+                <button onclick="findRepo()"> Search </button>
+
+            </div>
+            <canvas id="language1"></canvas>
+        </div>
+
+        <div class="blocks">            
+            <canvas id="language"></canvas>
+        </div>
+        <div class="rightpane">
+            
+            <canvas id="graph_cad"></canvas>
+        </div>
+        
+    
+        <h4>
+            <div style="position: fixed; text-align: center;bottom:10px;width: 100% ">
+            2021
+            </div>
+        </h4>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+        <script src="data.js"></script>
+    </body>
+</html>
