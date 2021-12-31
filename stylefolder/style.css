@@ -10,7 +10,20 @@ body{
     text-align:center;
     font-family:'Noto Serif', serif;
     }
-    
+    a:hover{background-color:#906fa8;color:#fff}
+        a{
+            color:#000000;
+            display:block;
+            padding:12px 20px;
+
+            max-width:350px;
+            margin:0 auto 15px; 
+            font-size:.9rem;
+            
+            border:2px solid #fff;
+            text-decoration:none;
+            transition:all .2s ease-in-out
+        }
     h3{
         font-size:14px;
         text-transform:uppercase;
